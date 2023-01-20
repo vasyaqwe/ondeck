@@ -18,34 +18,59 @@
     <img class="header--primary__logo" src="./assets/Logo.svg" alt="Ondeck logo">
     <nav id="nav--mobile" class="nav nav--mobile">
       <ul class="nav--mobile__list">
-        <li class="nav--mobile__item fw-500 flex">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
-          </svg></li>
-        <li class="nav--mobile__item fw-500 flex">Challenges <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
-          </svg></li>
-        <li class="nav--mobile__item fw-500 flex">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
-          </svg></li>
-        <li class="nav--mobile__item fw-500 flex">Other links <svg xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24" width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
-          </svg></li>
-        <li class="nav--mobile__item fw-500 flex">Sign in <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            width="24" height="24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
-          </svg></li>
+        <li class="nav--mobile__item fw-500">
+          <button aria-expanded="false" aria-controls="products-panel" class="nav--mobile__btn flex">
+            Products<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path class="chevron" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav--mobile__item fw-500">
+          <button class="nav--mobile__btn flex">
+            Challenges <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path class="chevron" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav--mobile__item fw-500">
+          <button class="nav--mobile__btn flex">
+            Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path class="chevron" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav--mobile__item fw-500">
+          <button class="nav--mobile__btn flex">
+            Other links <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path class="chevron" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav--mobile__item fw-500">
+          <a href="#" class="nav--mobile__link flex">
+            Sign in <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path class="chevron" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+            </svg>
+          </a>
+        </li>
       </ul>
       <div class="nav--mobile__item nav--mobile__item--btn">
         <a href="#" class="btn btn--nav">Try for free</a>
+      </div>
+      <div class="nav-panels">
+        <div class="nav-panel nav-panel--products" id="products-panel" data-visible="false">
+          <p class="nav-panel__title">Products</p>
+          <ul class="nav-panel__list">
+            <li><img src="./assets/Spense_Icon.svg" alt="Spense icon"> Spense</li>
+            <li><img src="./assets/Spense_Icon.svg" alt="Spense icon"> Spense</li>
+            <li><img src="./assets/Spense_Icon.svg" alt="Spense icon"> Spense</li>
+          </ul>
+        </div>
       </div>
     </nav>
     <button class="toggle toggle--nav" aria-controls="nav--mobile" aria-expanded="false"><span
