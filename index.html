@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ondeck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="/script.js"></script>
+</head>
+
+<body>
+  <header class="header header--primary container">
+    <img class="header--primary__logo" src="./assets/Logo.svg" alt="Ondeck logo">
+    <nav id="nav--mobile" class="nav nav--mobile">
+      <ul class="nav--mobile__list">
+        <li class="nav--mobile__item fw-500 flex">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
+          </svg></li>
+        <li class="nav--mobile__item fw-500 flex">Challenges <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
+          </svg></li>
+        <li class="nav--mobile__item fw-500 flex">Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
+          </svg></li>
+        <li class="nav--mobile__item fw-500 flex">Other links <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
+          </svg></li>
+        <li class="nav--mobile__item fw-500 flex">Sign in <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgba(107,107,107,1)" />
+          </svg></li>
+      </ul>
+      <div class="nav--mobile__item nav--mobile__item--btn">
+        <a href="#" class="btn btn--nav">Try for free</a>
+      </div>
+    </nav>
+    <button class="toggle toggle--nav" aria-controls="nav--mobile" aria-expanded="false"><span
+        class="sr-only">Menu</span></button>
+  </header>
+  <main>
+    <section class="section section--hero container">
+      <div class="section__text">
+        <h1 class="main-title">Ondeck is your remote <span class="text-accent">conference calling tool</span></h1>
+        <p>Ondeck is a service that allows you to create a beautiful, online, and encrypted video calls for you and your
+          remote team.</p>
+        <a href="#" class="btn">Try for free</a>
+        <div>
+          <p>5.0 Rating based on reviews from: </p>
+          <img src="./assets/Capterra_Logo.svg" alt="">
+          <img src="./assets/Spense_Icon.svg" alt="">
+          <img src="./assets/Fiber_Icon.svg" alt="">
+        </div>
+      </div>
+      <img class="section__img" src="./assets/Hero_Image.png" alt="">
+    </section>
+    <section class="section section--companies">
+      <p class="section__small-title">Trusted by 3+ million people at companies like</p>
+      <div class="section--companies__logos">
+        <img src="./assets/Netflix_Logo.svg" alt="Netflix Logo">
+        <img src="./assets/Shopify_Logo.svg" alt="Shopify Logo">
+        <img src="./assets/Spotify_Logo.svg" alt="Spotify Logo">
+        <img src="./assets/Walmart_Logo.svg" alt="Walmart Logo">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
