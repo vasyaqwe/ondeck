@@ -1,32 +1,52 @@
 const mobileNav = document.querySelector('.nav--mobile')
+const mobileNavList = document.querySelector('.nav--mobile__list')
 const mobileNavOpenBtn = document.querySelector('.toggle--nav-open')
 const mobileNavCloseBtn = document.querySelector('.toggle--nav-close')
 const mobileNavBtns = document.querySelectorAll('.nav--mobile__btn')
-const mobileNavBackBtns = document.querySelectorAll('.toggle--back')
+const mobileNavBackBtn = document.querySelector('.toggle--back')
 const desktopNav = document.querySelector('.nav--desktop')
 const dropdownBg = document.querySelector('.dropdown-bg')
 const desktopNavItems = document.querySelectorAll('.dropdown-trigger')
+const mobileNavLogo = document.querySelector('.header--primary__logo--nav')
+const navPanels = document.querySelectorAll('.nav-panel')
 
+let initialMobileNavHeight = mobileNav.getBoundingClientRect().height
+mobileNav.style.height = `${415.12}px`
 mobileNavOpenBtn.addEventListener('click', () => {
+  mobileNav.style.transition = 'max-height .4s ease-in-out, opacity .2s ease-in-out, visibility .2s, height .3s ease-in-out'
   mobileNav.setAttribute('data-visible', true)
-  mobileNav.style.transition = 'max-height .3s ease-in-out, opacity .2s ease-in-out'
+  setTimeout(() => initialMobileNavHeight = mobileNav.getBoundingClientRect().height, 400)
 })
 mobileNavCloseBtn.addEventListener('click', () => {
+  mobileNav.style.transition = 'max-height .2s ease-in-out, opacity .5s ease-in-out, visibility .2s, height .3s ease-in-out'
+  mobileNav.style.setProperty('height', `${initialMobileNavHeight}px`)
   mobileNav.setAttribute('data-visible', false)
-  mobileNav.style.transition = 'max-height .2s ease-in-out, opacity .4s ease-in-out'
   document.querySelectorAll('.nav-panel').forEach(el => {
-    setTimeout(() => el.setAttribute('data-visible', false), 400)
+    setTimeout(() => {
+      mobileNavList.setAttribute('data-visible', true)
+      el.setAttribute('data-visible', false)
+    }, 400)
   })
 })
 
 mobileNavBtns.forEach(btn => btn.addEventListener('click', (e) => {
   const targetPanel = document.querySelector(`#${e.currentTarget.getAttribute('aria-controls')}`)
+  const newHeight = targetPanel.querySelector('.nav-panel__list').getBoundingClientRect().height
+  mobileNavLogo.setAttribute('data-visible', false)
   targetPanel.setAttribute('data-visible', true)
+  mobileNavBackBtn.setAttribute('data-visible', true)
+  mobileNavList.setAttribute('data-visible', false)
+  mobileNav.style.height = `${newHeight + 180}px`
 }))
-mobileNavBackBtns.forEach(btn => btn.addEventListener('click', (e) => {
-  const targetPanel = document.querySelector(`#${e.currentTarget.getAttribute('aria-controls')}`)
+
+mobileNavBackBtn.addEventListener('click', (e) => {
+  const targetPanel = [...navPanels].find(panel => panel.getAttribute('data-visible') === 'true')
   targetPanel.setAttribute('data-visible', false)
-}))
+  e.currentTarget.setAttribute('data-visible', false)
+  mobileNavLogo.setAttribute('data-visible', true)
+  mobileNavList.setAttribute('data-visible', true)
+  mobileNav.style.setProperty('height', `${initialMobileNavHeight}px`)
+})
 
 function handleEnter(e) {
   const dropdown = e.target.querySelector('.nav__dropdown')
@@ -47,8 +67,8 @@ function handleEnter(e) {
 }
 
 function handleLeave(e) {
-  dropdownBg.setAttribute('data-visible', false)
   e.target.setAttribute('aria-expanded', false)
+  dropdownBg.setAttribute('data-visible', false)
 }
 
 desktopNavItems.forEach(el => el.addEventListener('mouseenter', handleEnter))

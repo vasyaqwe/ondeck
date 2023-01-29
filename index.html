@@ -18,7 +18,13 @@
     <img class="header--primary__logo" src="./assets/Logo.svg" alt="Ondeck logo">
     <nav id="nav--mobile" data-visible="false" class="nav nav--mobile">
       <header class="nav--mobile__header flex">
-        <img class="header--primary__logo" src="./assets/Logo.svg" alt="Ondeck logo">
+        <img class="header--primary__logo--nav" src="./assets/Logo.svg" alt="Ondeck logo" data-visible="true">
+        <button class="toggle toggle--back flex fw-500" aria-controls="other-links-panel" data-visible="false"><svg
+            style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path fill="#000" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+          </svg>Back</button>
         <button class="toggle toggle--nav-close" aria-controls="nav--mobile" aria-expanded="true"><span
             class="sr-only">Close menu</span></button>
       </header>
@@ -67,136 +73,106 @@
       <div class="nav--mobile__item nav--mobile__item--btn">
         <a href="#" class="btn btn--nav">Try for free</a>
       </div>
-      <div class="nav-panel nav-panel--products" id="products-panel" data-visible="false">
-        <header class="nav-panel__header flex">
-          <button class="toggle toggle--back flex fw-500" aria-controls="products-panel"><svg
-              style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-              height="24">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path fill="#000" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
-            </svg>Back</button>
-        </header>
-        <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-        <ul class="nav-panel__list flow">
-          <li class="nav-panel__item spense">
-            <p class="fs-smaller">Spense</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-              for practicing absolute positioning and flex
-              layouts.</p>
-          </li>
-          <li class="nav-panel__item fiber">
-            <p class="fs-smaller">Fiber Landing Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-              practice flex/grid layouts, and absolute
-              positioning.</p>
-          </li>
-          <li class="nav-panel__item gradie">
-            <p class="fs-smaller">Gradie Sign Up Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
-              practice centering layouts.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-panel nav-panel--challenges" id="challenges-panel" data-visible="false">
-        <header class="nav-panel__header flex">
-          <button class="toggle toggle--back flex fw-500" aria-controls="challenges-panel"><svg
-              style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-              height="24">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path fill="#000" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
-            </svg>Back</button>
-        </header>
-        <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-        <ul class="nav-panel__list flow">
-          <li class="nav-panel__item spense">
-            <p class="fs-smaller">Spense</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-              for practicing absolute positioning and flex
-              layouts.</p>
-          </li>
-          <li class="nav-panel__item fiber">
-            <p class="fs-smaller">Fiber Landing Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-              practice flex/grid layouts, and absolute
-              positioning.</p>
-          </li>
-          <li class="nav-panel__item gradie">
-            <p class="fs-smaller">Gradie Sign Up Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
-              practice centering layouts.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-panel nav-panel--resources" id="resources-panel" data-visible="false">
-        <header class="nav-panel__header flex">
-          <button class="toggle toggle--back flex fw-500" aria-controls="resources-panel"><svg
-              style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-              height="24">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path fill="#000" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
-            </svg>Back</button>
-        </header>
-        <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-        <ul class="nav-panel__list flow">
-          <li class="nav-panel__item spense">
-            <p class="fs-smaller">Spense</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-              for practicing absolute positioning and flex
-              layouts.</p>
-          </li>
-          <li class="nav-panel__item fiber">
-            <p class="fs-smaller">Fiber Landing Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-              practice flex/grid layouts, and absolute
-              positioning.</p>
-          </li>
-          <li class="nav-panel__item gradie">
-            <p class="fs-smaller">Gradie Sign Up Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
-              practice centering layouts.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-panel nav-panel--other-links" id="other-links-panel" data-visible="false">
-        <header class="nav-panel__header flex">
-          <button class="toggle toggle--back flex fw-500" aria-controls="other-links-panel"><svg
-              style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-              height="24">
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path fill="#000" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
-            </svg>Back</button>
-        </header>
-        <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-        <ul class="nav-panel__list flow">
-          <li class="nav-panel__item spense">
-            <p class="fs-smaller">Spense</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-              for practicing absolute positioning and flex
-              layouts.</p>
-          </li>
-          <li class="nav-panel__item fiber">
-            <p class="fs-smaller">Fiber Landing Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-              practice flex/grid layouts, and absolute
-              positioning.</p>
-          </li>
-          <li class="nav-panel__item gradie">
-            <p class="fs-smaller">Gradie Sign Up Page</p>
-            <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
-              practice centering layouts.</p>
-          </li>
-        </ul>
-      </div>
+      <section>
+        <div class="nav-panel nav-panel--products" id="products-panel" data-visible="false">
+          <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
+          <ul class="nav-panel__list flow">
+            <li class="nav-panel__item spense">
+              <p class="fs-smaller">Spense</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                for practicing absolute positioning and flex
+                layouts.</p>
+            </li>
+            <li class="nav-panel__item fiber">
+              <p class="fs-smaller">Fiber Landing Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                practice flex/grid layouts, and absolute
+                positioning.</p>
+            </li>
+            <li class="nav-panel__item gradie">
+              <p class="fs-smaller">Gradie Sign Up Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
+                practice centering layouts.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-panel nav-panel--challenges" id="challenges-panel" data-visible="false">
+          <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Challenges</p>
+          <ul class="nav-panel__list flow">
+            <li class="nav-panel__item spense">
+              <p class="fs-smaller">Spense</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                for practicing absolute positioning and flex
+                layouts.</p>
+            </li>
+            <li class="nav-panel__item fiber">
+              <p class="fs-smaller">Fiber Landing Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                practice flex/grid layouts, and absolute
+                positioning.</p>
+            </li>
+            <li class="nav-panel__item gradie">
+              <p class="fs-smaller">Gradie Sign Up Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
+                practice centering layouts.</p>
+            </li>
+            <li class="nav-panel__item gradie">
+              <p class="fs-smaller">Lorem Ipsum</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quia.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-panel nav-panel--resources" id="resources-panel" data-visible="false">
+          <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Resources</p>
+          <ul class="nav-panel__list flow">
+            <li class="nav-panel__item spense">
+              <p class="fs-smaller">Spense</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                for practicing absolute positioning and flex
+                layouts.</p>
+            </li>
+            <li class="nav-panel__item fiber">
+              <p class="fs-smaller">Fiber Landing Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                practice flex/grid layouts, and absolute
+                positioning.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-panel nav-panel--other-links" id="other-links-panel" data-visible="false">
+          <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Other Links</p>
+          <ul class="nav-panel__list flow">
+            <li class="nav-panel__item spense">
+              <p class="fs-smaller">Spense</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                for practicing absolute positioning and flex
+                layouts.</p>
+            </li>
+            <li class="nav-panel__item fiber">
+              <p class="fs-smaller">Fiber Landing Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                practice flex/grid layouts, and absolute
+                positioning.</p>
+            </li>
+            <li class="nav-panel__item gradie">
+              <p class="fs-smaller">Gradie Sign Up Page</p>
+              <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
+                practice centering layouts.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
     <nav class="nav nav--desktop">
       <div class="dropdown-bg">
       </div>
       <ul class="nav--desktop__list">
-        <li class="nav--desktop__item dropdown-trigger">
-          <a href="#" class="nav--desktop__link">Products</a>
-          <div class="nav__dropdown">
+        <li class="nav--desktop__item dropdown-trigger" aria-expanded="false">
+          Products
+          <div class="nav__dropdown nav__dropdown--products">
             <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-            <ul class="nav-panel__list flow">
+            <ul class="nav-panel__list nav-panel__list--dropdown ">
               <li class="nav-panel__item spense">
                 <p class="fs-smaller">Spense</p>
                 <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
@@ -217,61 +193,11 @@
             </ul>
           </div>
         </li>
-        <li class="nav--desktop__item dropdown-trigger">
-          <a href="#" class="nav--desktop__link">Challenges</a>
+        <li class="nav--desktop__item dropdown-trigger" aria-expanded="false">
+          Challenges
           <div class="nav__dropdown">
-            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-            <ul class="nav-panel__list flow">
-              <li class="nav-panel__item spense">
-                <p class="fs-smaller">Spense</p>
-                <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-                  for practicing absolute positioning and flex
-                  layouts.</p>
-              </li>
-              <li class="nav-panel__item fiber">
-                <p class="fs-smaller">Fiber Landing Page</p>
-                <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-                  practice flex/grid layouts, and absolute
-                  positioning.</p>
-              </li>
-              <li class="nav-panel__item gradie">
-                <p class="fs-smaller">Gradie Sign Up Page</p>
-                <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
-                  practice centering layouts.</p>
-              </li>
-              <li class="nav-panel__item gradie">
-                <p class="fs-smaller">Lorem Ipsum</p>
-                <p class="text-primary-100 fw-400 fs-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quia odio iusto.</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav--desktop__item dropdown-trigger">
-          <a href="#" class="nav--desktop__link">Resources</a>
-          <div class="nav__dropdown">
-            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-            <ul class="nav-panel__list flow">
-              <li class="nav-panel__item spense">
-                <p class="fs-smaller">Spense</p>
-                <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
-                  for practicing absolute positioning and flex
-                  layouts.</p>
-              </li>
-              <li class="nav-panel__item fiber">
-                <p class="fs-smaller">Fiber Landing Page</p>
-                <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
-                  practice flex/grid layouts, and absolute
-                  positioning.</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav--desktop__item dropdown-trigger">
-          <a href="#" class="nav--desktop__link">Other Links</a>
-          <div class="nav__dropdown">
-            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Products</p>
-            <ul class="nav-panel__list flow">
+            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Challenges</p>
+            <ul class="nav-panel__list nav-panel__list--dropdown">
               <li class="nav-panel__item spense">
                 <p class="fs-smaller">Spense</p>
                 <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
@@ -292,7 +218,57 @@
               <li class="nav-panel__item gradie">
                 <p class="fs-smaller">Lorem Ipsum</p>
                 <p class="text-primary-100 fw-400 fs-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis quia odio iusto.</p>
+                  Perferendis quia.</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav--desktop__item dropdown-trigger" aria-expanded="false">
+          Resources
+          <div class="nav__dropdown">
+            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Resources</p>
+            <ul class="nav-panel__list nav-panel__list--dropdown">
+              <li class="nav-panel__item spense">
+                <p class="fs-smaller">Spense</p>
+                <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                  for practicing absolute positioning and flex
+                  layouts.</p>
+              </li>
+              <li class="nav-panel__item fiber">
+                <p class="fs-smaller">Fiber Landing Page</p>
+                <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                  practice flex/grid layouts, and absolute
+                  positioning.</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav--desktop__item dropdown-trigger" aria-expanded="false">
+          Other Links
+          <div class="nav__dropdown">
+            <p class="nav-panel__title text-primary-100 fw-500 uppercase fs-smaller">Other Links</p>
+            <ul class="nav-panel__list nav-panel__list--dropdown">
+              <li class="nav-panel__item spense">
+                <p class="fs-smaller">Spense</p>
+                <p class="text-primary-100 fw-400 fs-smaller">Spense is a landing page for writers. Great
+                  for practicing absolute positioning and flex
+                  layouts.</p>
+              </li>
+              <li class="nav-panel__item fiber">
+                <p class="fs-smaller">Fiber Landing Page</p>
+                <p class="text-primary-100 fw-400 fs-smaller">An online port olio generator. Great to
+                  practice flex/grid layouts, and absolute
+                  positioning.</p>
+              </li>
+              <li class="nav-panel__item gradie">
+                <p class="fs-smaller">Gradie Sign Up Page</p>
+                <p class="text-primary-100 fw-400 fs-smaller">Gradie is a simple sign up page, great to
+                  practice centering layouts.</p>
+              </li>
+              <li class="nav-panel__item gradie">
+                <p class="fs-smaller">Lorem Ipsum</p>
+                <p class="text-primary-100 fw-400 fs-smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis quia.</p>
               </li>
             </ul>
           </div>
