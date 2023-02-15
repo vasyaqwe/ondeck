@@ -214,12 +214,12 @@ body {
 }
 
 .toggle--nav-open {
-  background-image: url('./assets/Menu.svg');
+  background-image: url('./images/Menu.svg');
 }
 
 .toggle--nav-close {
   margin-left: auto;
-  background-image: url('./assets/Close.svg');
+  background-image: url('./images/Close.svg');
   z-index: 2;
 }
 
@@ -478,21 +478,21 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  background-image: url('./assets/Spense_Icon.svg');
+  background-image: url('./images/Spense_Icon.svg');
   width: 24px;
   height: 24px;
 }
 
 .nav-panel__item.spense::before {
-  background-image: url('./assets/Spense_Icon.svg');
+  background-image: url('./images/Spense_Icon.svg');
 }
 
 .nav-panel__item.fiber::before {
-  background-image: url('./assets/Fiber_Icon.svg');
+  background-image: url('./images/Fiber_Icon.svg');
 }
 
 .nav-panel__item.gradie::before {
-  background-image: url('./assets/Gradie_Icon.svg');
+  background-image: url('./images/Gradie_Icon.svg');
 }
 
 .section--hero {
