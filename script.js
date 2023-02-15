@@ -11,6 +11,13 @@ const mobileNavLogo = document.querySelector('.header--primary__logo--nav')
 const navPanels = document.querySelectorAll('.nav-panel')
 
 let initialMobileNavHeight = mobileNav.getBoundingClientRect().height
+
+document.addEventListener('mousemove', (e) => {
+  const bounds = dropdownBg.getBoundingClientRect()
+  if (dropdownBg.getAttribute('data-visible') !== "true") {
+    dropdownBg.style.setProperty('transform', `translate(${e.clientX - bounds.width}px, ${e.clientY}px)`)
+  }
+})
 mobileNav.style.height = `${415.12}px`
 mobileNavOpenBtn.addEventListener('click', () => {
   mobileNav.style.transition = 'max-height .4s ease-in-out, opacity .2s ease-in-out, visibility .2s, height .3s ease-in-out'

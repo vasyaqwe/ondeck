@@ -307,6 +307,10 @@ body {
   transition: .25s ease;
 }
 
+.nav-panel__item {
+  cursor: pointer;
+}
+
 .nav--desktop__item:hover {
   color: #000;
 }
@@ -350,10 +354,10 @@ body {
   height: 344.8px;
   width: 464px;
   transform: translate(89.3167px, 65.6px);
-  transition: opacity .1s, transform .4s, height .4s, width .4s;
 }
 
 .dropdown-bg[data-visible=true] {
+  transition: opacity .1s, transform .4s, height .4s, width .4s;
   visibility: visible;
   opacity: 1;
 }
